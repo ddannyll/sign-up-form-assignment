@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign up</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./meyer.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -19,29 +23,40 @@
         </div>
         <div class="sign-up">
             <div class="header-text">
-                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Signup now to get started.</h2>
+                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h2>
+                <h2>Sign up <em>now</em> to get started.</h2>
                 <h2>You <em>know</em> you want to</h2>
             </div>
             <form action="" method="post">
                 <fieldset>
-                    <legend>Let's do this!</legend>
-                    <label for="name-first">FIRST NAME</label>
-                    <input type="text" id="name-first" name="name-first" required>
-
-                    <label for="name-last">LAST NAME</label>
-                    <input type="text" id="name-last" name="name-last">
-
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone" name="phone" required>
-
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password" required>
-
-                    <label for="confirm-password">CONIRM PASSWORD</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <h2>Let's do this!</h2>
+                    <div class="input-grid">
+                        <div class="label-input-pair">
+                            <label for="name-first">FIRST NAME</label>
+                            <input type="text" id="name-first" name="name-first" required>
+                        </div>
+                        
+                        <div class="label-input-pair">
+                            <label for="name-last">LAST NAME</label>
+                            <input type="text" id="name-last" name="name-last">
+                        </div>
+                        <div class="label-input-pair">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="label-input-pair">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone" required>    
+                        </div>
+                        <div class="label-input-pair">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="label-input-pair">
+                            <label for="confirm-password">CONIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
+                    </div>
                 </fieldset>
                 <input type="submit" value="Create Account">
             </form>
