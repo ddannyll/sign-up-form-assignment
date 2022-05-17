@@ -47,13 +47,13 @@ h1 {
 }
 
 .sign-up {
+    height: 100%;
     width: 60vw;
     box-sizing: border-box;
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 2rem;
-    margin-top: auto;
-    margin-bottom: auto;
+    overflow: auto;
 }
 
 
@@ -75,18 +75,19 @@ form input[type="submit"] {
     margin-left: 60px;
     border: 2px solid;
     border-radius: 0.5rem;
-    padding: 20px 60px;
+    padding: 15px 50px;
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--button-color);
     background-color: white;
     transition: 0.2s;
+    margin-top: 40px;
 }
 
 form input[type="submit"]:hover {
     background-color: var(--button-color);
     color: white;
-    transform: rotate(360deg);
+    cursor: pointer;
 }
 
 .input-grid {
@@ -116,4 +117,51 @@ form input {
 
 .sign-up>*:not(form) {
     padding: 40px;
+}
+
+.login>*{
+    display: inline;
+}
+
+a, a:visited {
+    text-decoration: underline;
+    color: rgb(123, 145, 160);
+    transition: 0.1s;
+}
+
+a:hover {
+    filter: brightness(0.5);
+}
+
+@media only screen and (max-width:800px) {
+    .input-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .main {
+        display: block;
+    }
+
+    .main>*{
+        width: 100%;
+        text-align: center;
+    }
+
+    form input[type="submit"] {
+        margin-left: 0px;
+    }
+
+    .sign-up {
+        overflow:visible;
+        width: auto;
+    }
+
+    .graphic {
+        background-size: max(100vmin, 300px);
+        height: 50%;
+    }
+
+    
 }
